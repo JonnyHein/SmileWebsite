@@ -1,0 +1,168 @@
+
+body {
+	margin: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-family: serif;
+    background-color: peachpuff;
+}
+
+/* FINISH ME (Task 2.2+): add the styling for the logo and the create button */
+
+header {
+    top: 0px;
+    position: fixed;
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: darkred;
+    z-index:1;
+}
+.mainbody{
+    padding-top: 200px;
+}
+article {
+    overflow: auto;
+    background-color: darkslategrey;
+}
+.create {
+    display: block;
+    max-width: 0 auto;
+    background-color: peachpuff;
+    padding: 10px 10px;
+}
+.title {
+    width: 100%;
+    text-align: center;
+    clear: left;
+    font-size: 100%;
+    font-weight: bold;
+}
+.story {
+    font-size: 80%;
+
+}
+.my-button {
+    display: inline-block;
+    width: 80%;
+    color: black;
+    border-color: pink;
+    background-color: darkred;
+    border: 3px solid;
+    text-decoration:none;
+    border-radius: 5px;
+}
+.my-button:hover{
+    background-color: yellow;
+}
+.happiness-col {
+    clear: left;
+    float:left;
+    width:50px;
+}
+.story-col {
+    position: relative;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.count-col {
+    position: relative;
+    float: right;
+    clear:right;
+    width: 48px;
+    height: 50px;
+
+}
+.like_count{
+    margin-top: 20px;
+    text-align: center;
+}
+.count {
+    background-image: url('../images/heart.png');
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 48px;
+    
+}
+
+.likebtn {
+    position: relative;
+    top: 70%;
+    left: 20%;
+    transform: translate(-24%, -120%);
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 20px;
+    color: transparent;
+    background-color: transparent;
+}
+.happiness-level {
+    background-image: url('../images/happiness-level.png');
+    width: 40px;
+    height: 100px;
+    background-repeat: no-repeat;
+    margin-left: 10px;      
+}
+.happiness-level-1 {
+    background-position: left;
+}
+.happiness-level-2 {
+    background-position: center;
+}
+.happiness-level-3 {
+    background-position: right;
+}
+.smile {
+  display: inline-block;
+  border: 5px solid;
+  border-radius: 20px;
+  margin:auto;
+}
+form {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+.title-input {
+    display:inline-block;
+    width:90%
+}
+.story-input {
+    display: block;
+    width: 91%;
+}
+.submit-input {
+    
+    float: right;
+    width: auto;
+    background-color: darkred;
+}
+
+.cancel-link {
+    width: auto;
+    background-color: darkred;
+}
+/* FINISH ME (Task 3): add responsive styling for the number of layout columns */
+@media screen and (min-width: 800px) {
+    .smiles {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count:2;
+        column-gap: 10px;
+        column-width: 50%;
+        
+    }
+}
+@media screen and (min-width: 1200px) {
+    .smiles {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count:3;
+        column-width: 33%;
+        column-gap: 5px;
+        -webkit-column-gap: 5px;
+        -moz-column-gap: 5px;
+    }
+}

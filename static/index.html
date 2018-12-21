@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+        <title>Smile</title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+
+<script src="scripts/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/smiles.js"></script>
+<script type="text/javascript">
+    // This is a jQuery convention to say that once all the files
+    // load, the function Smile.start() should run.
+    // This function is defined in the smiles.js
+    $(function() {
+        Smile.start();
+    });
+</script>
+
+
+
+</head>
+<body>
+        <header>
+                <!-- FINISH ME: add the logo here -->
+                <img src="images/smile.png" alt="Logo">
+                <div class="create">
+                    <!-- FINISH ME: add a link to the create page -->
+                    <button class="my-button create-smile">Create A Smile</button>
+                    <form method="get" action="index.html">
+                        <input type="text" placeholder="Title" class="title-input" name="title" />
+                           
+                        <textarea placeholder="Share a smile..."  class="story-input" name="story" rows="10"></textarea>
+                           
+                        <div class="happiness-level-input">
+                           <select class = "happinesslvl" name="happiness-level">
+                            <option value="0">Select happiness level:
+                            </option>
+                            <option value="1">Happy</option>
+                            <option value="2">Really happy</option>
+                            <option value="3">So ecstatic, I can't stop smiling!</option>
+                            </select>
+                           </div>
+                    <input type="submit" class="submit-input my-button" value="Post">
+                    <button class="cancel-link my-button">Cancel</button>
+                        <!-- FINISH ME: add the rest of the form fields -->
+                    </form>
+                </div>
+        </header>
+        <section class="mainbody smiles">
+                <!-- FINISH ME: create 3 smile posts -->
+                <article class="smile">
+                    <div class="title-col">
+                    <div class="title">
+                    No homework
+                    </div>
+                    </div>
+                    <div class="happiness-col">
+                    <div class="happiness-level">
+                    
+                    </div>
+                    </div>
+
+                    <div class="count-col">
+                            <div class="count">
+                            
+                            <button class ="likebtn">like</button>
+                            <div class = "like_count">
+                            10
+                            </div>
+                            </div>
+                            </div>
+                    
+                    <div class="story-col">
+                    <div class="story">
+                    Didn't have any homework today and i had a bunch of free time jdj eje jfe jekjej fjekfje jekjek jekwje ekje and yup yup yup wow wow wow yes yes yes Didn't have any homework today and i had a bunch of free time jdj eje jfe jekjej fjekfje jekjek jekwje ekje and yup yup yup wow wow wow yes yes yes
+                    <br>
+                    </div>
+                    <br>
+                    <div class="timestamp created_at">
+                    February 21, 2018
+                    </div>
+                    </div>
+                </article>
+     </section>
+</body>
+</html>
